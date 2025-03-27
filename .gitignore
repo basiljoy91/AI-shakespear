@@ -52,8 +52,8 @@ tempCodeRunnerFile.py
 *.npy
 *.npz
 *.pkl
-!best_model.keras  # Keep this one
-!textgenerator.keras  # Keep this one
+best_model.keras  
+textgenerator.keras  
 
 ### Logs ###
 logs/
