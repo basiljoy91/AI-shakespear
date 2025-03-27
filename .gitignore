@@ -1,0 +1,92 @@
+### Python ###
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.py[co]
+
+# Virtual environments
+venv/
+venv*/
+.env/
+ENV/
+
+# Package files
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+pip-log.txt
+pip-delete-this-directory.txt
+
+### Development ###
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+# Temp files
+tempCodeRunnerFile.py
+*.tempcoderunner*
+~$*.py
+*.tmp
+*.debug
+
+### Data ###
+# Dataset files
+*.csv
+*.json
+*.txt
+
+# Model files (track specific ones with LFS)
+*.h5
+*.pth
+*.bin
+*.npy
+*.npz
+*.pkl
+best_model.keras  
+textgenerator.keras  
+
+### Logs ###
+logs/
+*.log
+*.out
+
+### Testing ###
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.hypothesis/
+*.cover
+*.py,cover
+
+### Jupyter ###
+.ipynb_checkpoints/
+*.ipynb
+
+### System ###
+.DS_Store
+Thumbs.db
+
+### Environment ###
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+### Custom Directories ###
+notebooks/
+experiments/
+temp/
