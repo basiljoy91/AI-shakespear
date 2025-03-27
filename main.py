@@ -65,10 +65,10 @@ print("Model trained and saved successfully!")
 
 model = tf.keras.models.load_model('textgenerator.keras')
 
-def sample(preds, temperature=1.0):
+def sample(preds, temperature=0.5):
     preds = np.asarray(preds).astype('float64')
-    preds = np.log(preds) / temperature
-    exp_preds = np.exp(preds)
+    preds = np.log(preds) / (temperature + 1e-10)
+    exp_preds = np.exp(preds - np.max(preds))
     preds = exp_preds / np.sum(exp_preds)
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
